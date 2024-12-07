@@ -1,0 +1,5 @@
+C:/Users/rigry/CLionProjects/projectSys/cmake-build-debug/CMakeFiles/projectSys.dir
+C:/Users/rigry/CLionProjects/projectSys/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/rigry/CLionProjects/projectSys/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/rigry/CLionProjects/projectSys/cmake-build-debug/_deps/nlohmann_json-build/CMakeFiles/edit_cache.dir
+C:/Users/rigry/CLionProjects/projectSys/cmake-build-debug/_deps/nlohmann_json-build/CMakeFiles/rebuild_cache.dir
