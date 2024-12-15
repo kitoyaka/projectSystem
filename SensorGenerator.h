@@ -9,8 +9,7 @@
 #include <thread>
 #include <iostream>
 #include "ThreadSafeQueue.h"
-
-
+#include <random>
 struct SensorData
 {
     int id;
@@ -29,9 +28,13 @@ private:
     ThreadSafeQueue<SensorData>& dataQueue;
     bool running = true;
 
+
+
     double generateRandomValue()
     {
-        return static_cast<double>(rand()) / RAND_MAX * 100.0;
+        thread_local std::mt19937 generator(std::random_device{}());
+        std::uniform_real_distribution<double> distribution(0.0, 30.0);
+        return distribution(generator);
     }
 
     std::string getCurrentTime()

@@ -11,9 +11,9 @@ void SensorGenerator::generateData() {
         SensorData data = {id++, generateRandomValue(), getCurrentTime()};
         dataQueue.push(data);
         std::cout << "Generated data ID = " << data.id
-        <<  " , Value = " << data.value
+        <<  " , Temperature = " << data.value
         << " , Time = " << data.timestamp << std::endl;
-        std::this_thread::sleep_for(std::chrono::milliseconds(500));
+        std::this_thread::sleep_for(std::chrono::seconds (1));
     }
 }
 
