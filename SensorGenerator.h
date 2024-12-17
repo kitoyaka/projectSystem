@@ -23,11 +23,12 @@ public:
 
     void generateData();
     void stop();
+    bool isStopped();
 
 private:
     ThreadSafeQueue<SensorData>& dataQueue;
     bool running = true;
-
+    bool stopped = false;
 
 
     double generateRandomValue()

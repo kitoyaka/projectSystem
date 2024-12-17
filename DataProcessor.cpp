@@ -6,17 +6,15 @@
 #include <iostream>
 
 void DataProcessor::processData() {
-    SensorData data;
-
-    while(running || dataQueue.pop(data))
-    {
-        if(filterData(data))
-        {
+    while (!generator.isStopped() || !dataQueue.empty()) {
+        SensorData data;
+        if (dataQueue.pop(data)) {
             processedData.push_back(data);
         }
     }
-
+    std::cout << "Processing completed." << std::endl;
 }
+
 
 void DataProcessor::dataProcessingStop() {
      running = false;
@@ -25,6 +23,8 @@ void DataProcessor::dataProcessingStop() {
 bool DataProcessor::filterData(SensorData &data) {
     return data.value > 5 && data.value < 25;
 }
+
+bool DataProcessor::stop() { return running = false;}
 
 void DataProcessor::aggregateData(SensorData &data) {
 

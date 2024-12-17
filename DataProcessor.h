@@ -11,16 +11,18 @@
 
 class DataProcessor {
 public:
-    DataProcessor(ThreadSafeQueue<SensorData>& enteredQueue) : dataQueue(enteredQueue), running(true) {};
+    DataProcessor(ThreadSafeQueue<SensorData>& enteredQueue, SensorGenerator& generatorRef) : dataQueue(enteredQueue), generator(generatorRef) {};
 
     void processData();
     bool filterData(SensorData& data);
     void aggregateData(SensorData& data);
     void dataProcessingStop();
+    bool stop();
     std::vector<SensorData> getProcessedData();
 
 private:
     ThreadSafeQueue<SensorData>& dataQueue;
+    SensorGenerator& generator;
     std::vector<SensorData> processedData;
     bool running;
 };
