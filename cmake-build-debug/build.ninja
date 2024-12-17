@@ -56,26 +56,26 @@ build CMakeFiles/projectSys.dir/main.cpp.obj: CXX_COMPILER__projectSys_unscanned
   OBJECT_DIR = CMakeFiles\projectSys.dir
   OBJECT_FILE_DIR = CMakeFiles\projectSys.dir
 
-build CMakeFiles/projectSys.dir/SensorGenerator.cpp.obj: CXX_COMPILER__projectSys_unscanned_Debug C$:/Users/rigry/CLionProjects/projectSys/SensorGenerator.cpp || cmake_object_order_depends_target_projectSys
-  DEP_FILE = CMakeFiles\projectSys.dir\SensorGenerator.cpp.obj.d
+build CMakeFiles/projectSys.dir/data/SensorGenerator.cpp.obj: CXX_COMPILER__projectSys_unscanned_Debug C$:/Users/rigry/CLionProjects/projectSys/data/SensorGenerator.cpp || cmake_object_order_depends_target_projectSys
+  DEP_FILE = CMakeFiles\projectSys.dir\data\SensorGenerator.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/rigry/CLionProjects/projectSys/cmake-build-debug/_deps/nlohmann_json-src/include
   OBJECT_DIR = CMakeFiles\projectSys.dir
-  OBJECT_FILE_DIR = CMakeFiles\projectSys.dir
+  OBJECT_FILE_DIR = CMakeFiles\projectSys.dir\data
 
-build CMakeFiles/projectSys.dir/DataProcessor.cpp.obj: CXX_COMPILER__projectSys_unscanned_Debug C$:/Users/rigry/CLionProjects/projectSys/DataProcessor.cpp || cmake_object_order_depends_target_projectSys
-  DEP_FILE = CMakeFiles\projectSys.dir\DataProcessor.cpp.obj.d
+build CMakeFiles/projectSys.dir/data/DataProcessor.cpp.obj: CXX_COMPILER__projectSys_unscanned_Debug C$:/Users/rigry/CLionProjects/projectSys/data/DataProcessor.cpp || cmake_object_order_depends_target_projectSys
+  DEP_FILE = CMakeFiles\projectSys.dir\data\DataProcessor.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/rigry/CLionProjects/projectSys/cmake-build-debug/_deps/nlohmann_json-src/include
   OBJECT_DIR = CMakeFiles\projectSys.dir
-  OBJECT_FILE_DIR = CMakeFiles\projectSys.dir
+  OBJECT_FILE_DIR = CMakeFiles\projectSys.dir\data
 
-build CMakeFiles/projectSys.dir/JsonStorage.cpp.obj: CXX_COMPILER__projectSys_unscanned_Debug C$:/Users/rigry/CLionProjects/projectSys/JsonStorage.cpp || cmake_object_order_depends_target_projectSys
-  DEP_FILE = CMakeFiles\projectSys.dir\JsonStorage.cpp.obj.d
+build CMakeFiles/projectSys.dir/storage/JsonStorage.cpp.obj: CXX_COMPILER__projectSys_unscanned_Debug C$:/Users/rigry/CLionProjects/projectSys/storage/JsonStorage.cpp || cmake_object_order_depends_target_projectSys
+  DEP_FILE = CMakeFiles\projectSys.dir\storage\JsonStorage.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/rigry/CLionProjects/projectSys/cmake-build-debug/_deps/nlohmann_json-src/include
   OBJECT_DIR = CMakeFiles\projectSys.dir
-  OBJECT_FILE_DIR = CMakeFiles\projectSys.dir
+  OBJECT_FILE_DIR = CMakeFiles\projectSys.dir\storage
 
 
 # =============================================================================
@@ -85,7 +85,7 @@ build CMakeFiles/projectSys.dir/JsonStorage.cpp.obj: CXX_COMPILER__projectSys_un
 #############################################
 # Link the executable projectSys.exe
 
-build projectSys.exe: CXX_EXECUTABLE_LINKER__projectSys_Debug CMakeFiles/projectSys.dir/main.cpp.obj CMakeFiles/projectSys.dir/SensorGenerator.cpp.obj CMakeFiles/projectSys.dir/DataProcessor.cpp.obj CMakeFiles/projectSys.dir/JsonStorage.cpp.obj
+build projectSys.exe: CXX_EXECUTABLE_LINKER__projectSys_Debug CMakeFiles/projectSys.dir/main.cpp.obj CMakeFiles/projectSys.dir/data/SensorGenerator.cpp.obj CMakeFiles/projectSys.dir/data/DataProcessor.cpp.obj CMakeFiles/projectSys.dir/storage/JsonStorage.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\projectSys.dir

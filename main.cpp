@@ -1,8 +1,8 @@
 #include <iostream>
 #include <nlohmann/json.hpp>
-#include "ThreadSafeQueue.h"
-#include "SensorGenerator.h"
-#include "DataProcessor.h"
+#include "data/ThreadSafeQueue.h"
+#include "data/SensorGenerator.h"
+#include "data/DataProcessor.h"
 int main() {
 
 

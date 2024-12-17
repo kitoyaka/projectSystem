@@ -9,7 +9,9 @@ void DataProcessor::processData() {
     while (!generator.isStopped() || !dataQueue.empty()) {
         SensorData data;
         if (dataQueue.pop(data)) {
-            processedData.push_back(data);
+            if(data.value > 5 && data.value < 25) {
+                processedData.push_back(data);
+            }
         }
     }
     std::cout << "Processing completed." << std::endl;

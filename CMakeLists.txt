@@ -13,10 +13,10 @@ FetchContent_MakeAvailable(nlohmann_json)
 
 include_directories("${CMAKE_BINARY_DIR}/_deps/nlohmann_json-src/include")
 add_executable(projectSys main.cpp
-        SensorGenerator.cpp
-        SensorGenerator.h
-        DataProcessor.cpp
-        DataProcessor.h
-        JsonStorage.cpp
-        JsonStorage.h
-        ThreadSafeQueue.h)
+        data/SensorGenerator.cpp
+        data/SensorGenerator.h
+        data/DataProcessor.cpp
+        data/DataProcessor.h
+        storage/JsonStorage.cpp
+        storage/JsonStorage.h
+        data/ThreadSafeQueue.h)
